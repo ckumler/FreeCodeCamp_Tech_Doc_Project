@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* Navigation */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    display: block;
+    padding: 5px 0;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+/* Main content */
+#main-doc {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.main-section {
+    margin-bottom: 20px;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+    #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
